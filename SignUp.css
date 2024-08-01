@@ -1,0 +1,124 @@
+ /* Body and HTML to center content and provide a backdrop */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container for the sign-up form */
+  .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Full width */
+    padding: 30px;
+    border-radius: 12px; /* More rounded corners */
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    position: relative; /* For positioning elements inside */
+  }
+  
+  /* Heading styling */
+  .sign-up-container h1 {
+    font-size: 2.5rem; /* Larger font size for prominence */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .form {
+    width: 100%;
+  }
+  
+  /* Grid layout for form groups */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns and rows */
+  }
+  
+  /* Form group styling */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    display: block;
+    font-weight: 600; /* Bold text for labels */
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.875rem; /* Slightly smaller font size for labels */
+  }
+  
+  /* Input field styling */
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* More rounded corners for inputs */
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Subtle shadow on focus */
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #e74c3c; /* Red color for errors */
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Larger padding for the button */
+    border-radius: 8px; /* Curved corners for the button */
+    font-size: 1.125rem; /* Slightly larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Return to original position on click */
+  }
+  
+  /* Link styling */
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transitions */
+  }
+  
+  p a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+  
